@@ -1,5 +1,9 @@
-import React from "react"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+import React from 'react';
+import { render } from 'react-dom';
+import { App } from './App';
+import * as serviceWorker from './serviceWorker';
+
+render(<App />, document.getElementById('root'));
+
+serviceWorker.register();
